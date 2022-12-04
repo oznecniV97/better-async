@@ -3,8 +3,8 @@ type InPromiseObject<T extends PrePromiseObject> = Record<keyof T, unknown>;
 type PostPromiseObject<T extends PrePromiseObject> = PromiseLike<InPromiseObject<T>>;
 
 export class BetterPromise<T> extends Promise<T> {
-    //TODO: creare stesso metodo anche per allSettled
-    //TODO: capire se fattibile modificare l'output per far sì che non sia unknown ma il tipo contenuto nella promise passata
+    //TODO: build similar method for Promise.allSettled
+    //TODO: check if unknown types can be changed to dynamic ones (Promise<number> -> number)
     static async objectAll<T extends PrePromiseObject>(obj: T): Promise<PostPromiseObject<T>> {
         if (!obj) {
             return obj;

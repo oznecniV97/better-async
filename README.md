@@ -4,24 +4,24 @@ Useful package to work with promises
 
 ## TODO
 
-- mappa promise parallele
-- easy promise con gestione try catch e return invece che callback TODO: CAPIRE SE SERVE O IN AUTOMATICO JS LO GESTISCE GIà
-- modifica costruzone pacchetto: [info costruzione pacchetto](https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c)
+- parallel promises on map
+- easy promise with auto try catch and return instead of callback TODO: CHECK IF JS ALREADY DO THIS
+- change package configurations: [info standard configuration](https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c)
 
 ```typescript
-//versione standard
+//standard version
 new Promise((resolve, reject) => {
     try {
-        const valore = metodoPericolosoChePuoInvocareEccezione();
-        resolve(valore);
+        const valueToReturn = canRaiseException();
+        resolve(valueToReturn);
     } catch(err) {
         reject(err);
     }
 });
 
-//EasyPromise, la gestione del catch è automatica
+//EasyPromise, try catch is automatic
 new EasyPromise(async () => {
-    const valore = metodoPericolosoChePuoInvocareEccezione();
-    return valore;
+    const valueToReturn = canRaiseException();
+    return valueToReturn;
 });
 ```
