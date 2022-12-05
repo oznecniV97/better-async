@@ -32,6 +32,7 @@
   "rules": {
     "functional/no-class": "off",
     "functional/immutable-data": "off",
+    "functional/prefer-readonly-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "eslint-comments/disable-enable-pair": [
       "error",
