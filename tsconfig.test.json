@@ -22,7 +22,8 @@
       "es2017"
     ],
     "types": [
-      "node"
+      "node",
+      "jest"
     ],
     "typeRoots": [
       "node_modules/@types",
@@ -30,11 +31,10 @@
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.spec.ts"
   ],
   "exclude": [
     "node_modules/**",
-    "**/*.spec.ts"
   ],
   "compileOnSave": false
 }

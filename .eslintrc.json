@@ -1,11 +1,14 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.test.json"
+    ]
   },
   "env": {
-    "es6": true
+    "es2017": true,
+    "jest/globals": true
   },
   "ignorePatterns": [
     "node_modules",
@@ -15,7 +18,8 @@
   "plugins": [
     "import",
     "eslint-comments",
-    "functional"
+    "functional",
+    "jest"
   ],
   "extends": [
     "eslint:recommended",
