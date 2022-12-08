@@ -1,15 +1,19 @@
 {
   "name": "better-async",
+  "author": "oznecniV97",
   "version": "1.0.0",
   "description": "Useful package to work with promises",
   "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oznecniV97/better-async"
   },
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "promises",
+    "async"
+  ],
   "bugs": {
     "url": "https://github.com/oznecniV97/better-async/issues"
   },
