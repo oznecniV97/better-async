@@ -1,40 +1,40 @@
 {
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "build",
-    "strict": true,
-    "incremental": true,
-    "rootDir": "src",
-    "moduleResolution": "node",
-    "inlineSourceMap": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "traceResolution": false,
-    "listEmittedFiles": false,
-    "listFiles": false,
-    "pretty": true,
-    "lib": [
-      "es2017"
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "lib",
+        "strict": true,
+        "incremental": false,
+        "rootDir": "src",
+        "moduleResolution": "node",
+        "inlineSourceMap": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "traceResolution": false,
+        "listEmittedFiles": false,
+        "listFiles": false,
+        "pretty": true,
+        "lib": [
+            "es2017"
+        ],
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "node_modules/@types",
+            "src/types"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
     ],
-    "types": [
-      "node"
+    "exclude": [
+        "node_modules/**",
+        "**/*.spec.ts"
     ],
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types"
-    ]
-  },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules/**",
-    "**/*.spec.ts"
-  ],
-  "compileOnSave": false
+    "compileOnSave": false
 }

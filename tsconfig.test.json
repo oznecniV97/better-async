@@ -3,9 +3,7 @@
     "target": "es2017",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "build",
     "strict": true,
-    "incremental": true,
     "rootDir": "src",
     "moduleResolution": "node",
     "inlineSourceMap": true,
@@ -17,7 +15,6 @@
     "traceResolution": false,
     "listEmittedFiles": false,
     "listFiles": false,
-    "pretty": true,
     "lib": [
       "es2017"
     ],
@@ -34,7 +31,6 @@
     "src/**/*.spec.ts"
   ],
   "exclude": [
-    "node_modules/**",
-  ],
-  "compileOnSave": false
+    "node_modules/**"
+  ]
 }

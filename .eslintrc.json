@@ -12,7 +12,7 @@
   },
   "ignorePatterns": [
     "node_modules",
-    "build",
+    "lib",
     "coverage"
   ],
   "plugins": [

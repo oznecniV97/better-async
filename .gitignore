@@ -2,7 +2,7 @@ node_modules
 
 .idea/*
 .nyc_output
-build
+lib
 test
 src/**.js
 coverage
