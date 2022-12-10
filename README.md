@@ -78,26 +78,3 @@ console.log(responses.extApi1.status); // status of external api request 1
 console.log(responses.extApi2.status); // status of external api request 2
 console.log(responses.process.status); // status of time consuming process
 ```
-
-## Roadmap
-
-- ✔ parallel promises on map
-- easy promise with auto try catch and return instead of callback TODO: CHECK IF JS ALREADY DO THIS
-
-```typescript
-//standard version
-new Promise((resolve, reject) => {
-    try {
-        const valueToReturn = canRaiseException();
-        resolve(valueToReturn);
-    } catch(err) {
-        reject(err);
-    }
-});
-
-//EasyPromise, try catch is automatic
-new EasyPromise(async () => {
-    const valueToReturn = canRaiseException();
-    return valueToReturn;
-});
-```
