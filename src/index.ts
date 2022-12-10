@@ -1,1 +1,1 @@
-export * from "./lib/better-promise";
+export * from "./better-promise";
