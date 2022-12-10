@@ -1,6 +1,6 @@
-type PrePromiseObject<R = unknown> = Record<string, R | PromiseLike<R>>;
-type InPromiseObject<T extends PrePromiseObject<V>, V = unknown, R = V> = Record<keyof T, R>;
-type InSettledPromiseObject<T extends PrePromiseObject<R>, R = unknown> = InPromiseObject<T, R, PromiseSettledResult<R>>;
+export type PrePromiseObject<R = unknown> = Record<string, R | PromiseLike<R>>;
+export type InPromiseObject<T extends PrePromiseObject<V>, V = unknown, R = V> = Record<keyof T, R>;
+export type InSettledPromiseObject<T extends PrePromiseObject<R>, R = unknown> = InPromiseObject<T, R, PromiseSettledResult<R>>;
 
 export class BetterPromise<T> extends Promise<T> {
     private static async genericObjectAll<T extends PrePromiseObject<V>, V, R = V>(
