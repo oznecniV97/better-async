@@ -1,4 +1,9 @@
-# better-async
+# better-async &middot;
+
+![NPM](https://img.shields.io/npm/l/better-async)
+[![npm version](https://img.shields.io/npm/v/better-async.svg?style=flat)](https://www.npmjs.com/package/better-async)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/better-async)](https://bundlephobia.com/package/better-async)
+![npm](https://img.shields.io/npm/dt/better-async)
 
 Useful package to work with promises.
 
